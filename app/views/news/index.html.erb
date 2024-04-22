@@ -1,0 +1,11 @@
+<h1>News</h1>
+<a href='/'>Home</a>
+
+<% @articles.each do |article| %>
+    <div>
+        <p><b><%= article[:title] %></b></p>
+        <p><%= article[:content] %></p>
+    </div>
+<% end %>
+
+

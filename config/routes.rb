@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # root path of app should be mapped to index method of home controller
+  root 'home#index'
+
+  # maps index method of news controller to '/news'
+  get 'news' => 'news#index'
+
+  get 'home/index'
 end
