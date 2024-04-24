@@ -9,8 +9,9 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
 // import javascript files in src folder
-import 'src/home';
-import 'src/news';
+import 'src/foo';
+// import 'src/home';
+// import 'src/news';
 
 Rails.start()
 Turbolinks.start()
