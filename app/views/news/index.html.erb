@@ -1,5 +1,10 @@
 <%= javascript_pack_tag 'home', 'data-turbolinks-track': 'reload' %>
 
+<% content_for :head do %>
+    <title>News - FullStackDummy</title>
+    <meta name='description' content='News for a dummy Full-Stack application for testing.' />
+<% end %>
+
 <h1 class='text-center'>News</h1>
 
 <% @articles.each do |article| %>
